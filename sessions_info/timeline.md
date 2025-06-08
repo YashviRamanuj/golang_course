@@ -1,7 +1,10 @@
 # Course Timeline
 
 1. **Week 1: Go setup + syntax basics + Data structures + error handling**
+   - intro to golang
+   - key data structures, int, float, string, bool, rune, slice, maps
    - Focus: Variables, control flow, functions
+   - GOPATH, GOROOT, packages
    - Project: "Hello GoBlogr" CLI
 
 2. **Week 2: Structs & Interfaces**
