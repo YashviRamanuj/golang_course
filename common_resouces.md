@@ -17,18 +17,13 @@
 
 
 ### 🎯 Objectives of today's lecture:
-Understand Go’s ecosystem and why it’s unique.
-
-Learn basic syntax and usage patterns.
-
-Build your first CLI app – “Hello GoBlogr”.
-
-Explore data structures & error handling via a simple word counter.
+- Understand Go’s ecosystem and why it’s unique.
+- Learn basic syntax and usage patterns.
+- Build your first CLI app – “Hello GoBlogr”.
+- Explore data structures & error handling via a simple word counter.
 
 
-### Introduction to Go
-
-🎯 Key Points:
+### 🎯 Introduction to Go
 - Go Language: Created by Google in 2007, open-sourced in 2009.
 - Modern & pragmatic: Designed for simplicity, concurrency, and fast compile times.
 - Compiled & statically typed: Great for performance and reliability.
@@ -41,10 +36,12 @@ Explore data structures & error handling via a simple word counter.
 - Static binaries: Easy deployment, no runtime dependency hell.
 
 ### ⚖️ Strengths & Weaknesses
+
 STRENGTH
 - Simplicity & readability
 - Concurrency support (goroutines)
 - Fast compilation & execution
+
 WEAKNESS
 - No generics (until Go 1.18)
 - Limited metaprogramming
