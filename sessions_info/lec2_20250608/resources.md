@@ -20,7 +20,8 @@
 
 
 #### homework
-1. host somewhere for free 
+1. project init
+2. host somewhere for free 
 
 #### Annoucements 
 - Next Sunday off

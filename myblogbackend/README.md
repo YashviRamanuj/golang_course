@@ -2,6 +2,7 @@
 
 
 # feature's list
+- health check
 - write blog
 - view blog
 - update blog
