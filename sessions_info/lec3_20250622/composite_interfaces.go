@@ -9,8 +9,17 @@ type Writer interface {
 type ReadWriter interface {
     Reader
     Writer
+    // Read(p []byte) (n int, err error)
+    // Write(p []byte) (n int, err error)
 }
 
+type ReadOnly interface {
+    Read(p []byte) (n int, err error)
+}
+
+type WriteOnly interface {
+    Write(p []byte) (n int, err error)
+}
 
 // ----------------------------
 type FileReaderWriter struct {

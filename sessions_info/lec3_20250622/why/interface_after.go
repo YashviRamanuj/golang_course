@@ -21,6 +21,30 @@ func PrintReport(l Logger) {
     l.Log("Report generated at " + time.Now().String())
 }
 
+func defaultLog(msg string) {
+    fmt.Println(msg)
+}
+
+func main(a Logger) {
+    // PrintReport(ConsoleLogger{})
+    var t type
+    t = type(a)
+    switch t {
+        case ConsoleLogger:
+            PrintReport(ConsoleLogger{})
+        case FileLogger:
+            PrintReport(FileLogger{"report.txt"})
+        case SlackLogger:
+            PrintReport(SlackLogger{})
+        case abc:
+            PrintReport(abc{})
+        case xyx:
+            PrintReport(xyx{})
+        case sentry:
+            PrintReport(sentry{})
+        default:
+            defaultLog("Report generated at " + time.Now().String())
+}
 
 
 
@@ -31,3 +55,38 @@ type SlackLogger struct{}
 func (s SlackLogger) Log(msg string) {
     // send to Slack API
 }
+
+
+type abc struct {}
+
+func (a abc) Log(msg string) {
+    // logic
+}
+
+type xyx
+
+type sentry struct {}
+
+func (s sentry) Log(msg string) {
+    // logic
+}
+
+
+type human struct {
+    name string
+    age int
+}
+
+type dog struct {
+    name string
+    owner string
+}
+
+func main() {
+    h := human{"John", 30}
+    d := dog{"Buddy", "John"}
+  
+    d.(human)
+}
+
+    

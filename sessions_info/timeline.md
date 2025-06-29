@@ -56,3 +56,8 @@
 14.* Docs & Final Presentation
     - Focus: README, OpenAPI docs, deployment instructions
     - Project: Polished repo + demo-ready
+
+
+## pending
+
+1. error handling and panic and ok in golang

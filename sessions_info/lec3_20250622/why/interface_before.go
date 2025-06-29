@@ -1,3 +1,7 @@
+package main
+
+import "sort"
+
 func LogToConsole(msg string) {
     fmt.Println(msg)
 }
@@ -29,7 +33,12 @@ func LogToSlack(msg string) {
     // send to Slack API
 }
 
+func defaultLog(msg string) {
+	LogToConsole(msg)
+}
+
 func PrintReport(mode string, msg string) {
+
 	if mode == "console" {
 		LogToConsole(msg)
 	} else if mode == "file" {
@@ -39,5 +48,7 @@ func PrintReport(mode string, msg string) {
 	} else if mode == "slack" {
 		LogToSlack(msg)
 	}
+	else defaultLog(msg)
+	sort.Sort()
 	return
 }	
